@@ -20,5 +20,9 @@ class Database {
 
         $this->conn->set_charset("utf8mb4");
     }
+
+    public function getConn() {
+    return $this->conn;
+}
 }
 ?>
