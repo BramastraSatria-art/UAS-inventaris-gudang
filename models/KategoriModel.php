@@ -31,7 +31,6 @@ class KategoriModel extends Database {
     }
 
     public function delete($id) {
-        // Cek apakah kategori masih dipakai barang
         $cek = "SELECT COUNT(*) as total FROM barang WHERE id_kategori = ?";
         $stmt = $this->conn->prepare($cek);
         $stmt->bind_param("i", $id);
