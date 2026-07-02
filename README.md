@@ -8,13 +8,6 @@ Sistem untuk mengelola data stok barang pada gudang yang mendistribusikan barang
 2. Made Bramastra Satria Pinangguh (240040097)
 3. I Wayan Bayu Caerma Akasidan (240040103)
 
-## Cara Install
-
-1. Clone repository ini
-2. Import database dari `database/db_inventaris_gudang_uas.sql` ke phpMyAdmin
-3. Jalankan `composer install` untuk install dependensi Carbon
-4. Jalankan di XAMPP, buka `http://localhost/inventaris-gudang_UAS`
-
 ## Akun Default
 
 - Superadmin: username `superadmin`, password `superadmin123`
