@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/../config/koneksi.php';
-require_once __DIR__ . '/../TCPDF-main/tcpdf.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../models/LaporanModel.php';
 
 class ExportModel {
