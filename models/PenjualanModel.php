@@ -37,7 +37,7 @@ class PenjualanModel extends Database {
             $qry = "INSERT INTO detail_transaksi (id_transaksi, id_barang, jumlah, harga_satuan, subtotal) 
                     VALUES (?, ?, ?, ?, ?)";
             $stmt = $this->conn->prepare($qry);
-            $stmt->bind_param("iidd", $id_transaksi, $item['id'], $item['jumlah'], $item['harga'], $subtotal);
+            $stmt->bind_param("iiidd", $id_transaksi, $item['id'], $item['jumlah'], $item['harga'], $subtotal);
 
             if (!$stmt->execute()) {
                 return false;
