@@ -23,13 +23,12 @@ class Session {
 
     public static function isTimeout() {
         self::start();
-        $timeout = 30 * 60; // 30 menit dalam detik
+        $timeout = 30 * 60; 
         if (isset($_SESSION['login_time'])) {
             if (time() - $_SESSION['login_time'] > $timeout) {
                 self::destroy();
                 return true;
             }
-            // Perbarui waktu aktif
             $_SESSION['login_time'] = time();
         }
         return false;
